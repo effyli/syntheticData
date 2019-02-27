@@ -1,0 +1,14 @@
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.csproj.CoreCompileInputs.cache
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.AssemblyInfoInputs.cache
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.AssemblyInfo.cs
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\syntheticData.deps.json
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\syntheticData.runtimeconfig.json
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\syntheticData.runtimeconfig.dev.json
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\syntheticData.dll
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\syntheticData.pdb
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\CSPlot.dll
+C:\Effy\syntheticData\bin\Debug\netcoreapp2.1\CSPlot.pdb
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.dll
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.pdb
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.csproj.CopyComplete
+C:\Effy\syntheticData\obj\Debug\netcoreapp2.1\syntheticData.csprojAssemblyReference.cache

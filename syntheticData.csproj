@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CSPlot">
+      <HintPath>..\CSPlot_lib\CSPlot\CSPlot\obj\Debug\netcoreapp2.1\CSPlot.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
