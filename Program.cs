@@ -1,4 +1,5 @@
 ﻿using System;
+using CSPlot;
 using System.Collections.Generic;
 
 namespace Synthetic
