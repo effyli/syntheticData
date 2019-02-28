@@ -59,7 +59,7 @@ namespace Synthetic
             csplot0.Open();
             csplot0.Close();
             csplot0.Open();
-
+            csplot0.Close();
         }
 
         void function2()
