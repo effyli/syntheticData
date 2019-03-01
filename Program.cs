@@ -1,5 +1,6 @@
 ﻿using System;
 using CSPlot;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace Synthetic
