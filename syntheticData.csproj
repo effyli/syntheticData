@@ -10,9 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CSPlot">
-      <HintPath>..\CSPlot_lib\CSPlot\CSPlot\obj\Debug\netcoreapp2.1\CSPlot.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\CSPlot_lib\CSPlot\CSPlot\CSPlot.csproj" />
   </ItemGroup>
 
 </Project>
