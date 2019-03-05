@@ -2,6 +2,8 @@
 using CSPlot;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Text;
+using System.IO;
 
 namespace Synthetic
 {
@@ -10,6 +12,28 @@ namespace Synthetic
         public CSPlot.CSPlot csplot10 = new CSPlot.CSPlot();
         static void Main()
         {
+            StringBuilder sb = new StringBuilder();
+            StringWriter sw = new StringWriter(sb);
+
+            using (JsonWriter writer = new JsonTextWriter(sw))
+            {
+                writer.Formatting = Formatting.Indented;
+
+                writer.WriteStartObject();
+                writer.WritePropertyName("CPU");
+                writer.WriteValue("Intel");
+                writer.WritePropertyName("PSU");
+                writer.WriteValue("500W");
+                writer.WritePropertyName("Drives");
+                writer.WriteStartArray();
+                writer.WriteValue("DVD read/writer");
+                writer.WriteComment("(broken)");
+                writer.WriteValue("500 gigabyte hard drive");
+                writer.WriteValue("200 gigabyte hard drive");
+                writer.WriteEnd();
+                writer.WriteEndObject();
+            }
+
         }
         void function0()
         {
