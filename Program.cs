@@ -27,9 +27,6 @@ namespace Synthetic
                 writer.WritePropertyName("Drives");
                 writer.WriteStartArray();
                 writer.WriteValue("DVD read/writer");
-                writer.WriteComment("(broken)");
-                writer.WriteValue("500 gigabyte hard drive");
-                writer.WriteValue("200 gigabyte hard drive");
                 writer.WriteEnd();
                 writer.WriteEndObject();
             }
