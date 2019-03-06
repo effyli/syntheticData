@@ -12,23 +12,27 @@ namespace Synthetic
         public CSPlot.CSPlot csplot10 = new CSPlot.CSPlot();
         static void Main()
         {
-            StringBuilder sb = new StringBuilder();
-            StringWriter sw = new StringWriter(sb);
-
-            using (JsonWriter writer = new JsonTextWriter(sw))
+            string json = @"{
+               'CPU': 'Intel',
+               'PSU': '500W',
+               'Drives': [
+                 'DVD read/writer'
+                 /*(broken)*/,
+                 '500 gigabyte hard drive',
+                 '200 gigabyte hard drive'
+               ]
+            }";
+            JsonTextReader reader = new JsonTextReader(new StringReader(json));
+            while (reader.Read())
             {
-                writer.Formatting = Formatting.Indented;
-
-                writer.WriteStartObject();
-                writer.WritePropertyName("CPU");
-                writer.WriteValue("Intel");
-                writer.WritePropertyName("PSU");
-                writer.WriteValue("500W");
-                writer.WritePropertyName("Drives");
-                writer.WriteStartArray();
-                writer.WriteValue("DVD read/writer");
-                writer.WriteEnd();
-                writer.WriteEndObject();
+                if (reader.Value != null)
+                {
+                    Console.WriteLine("Token: {0}, Value: {1}", reader.TokenType, reader.Value);
+                }
+                else
+                {
+                    Console.WriteLine("Token: {0}", reader.TokenType);
+                }
             }
 
         }
