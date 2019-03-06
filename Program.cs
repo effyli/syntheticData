@@ -23,10 +23,12 @@ namespace Synthetic
                ]
             }";
             JsonTextReader reader = new JsonTextReader(new StringReader(json));
-            while (reader.Read()) {
-                if (reader.HasLineInfo()) {
-                    Console.Write(reader.Value);
-                }
+            if (reader.HasLineInfo())
+            {
+                reader.Read();
+            }
+            else {
+                reader.Close();
             }
 
         }
